@@ -119,7 +119,7 @@ function getResults() {
     });
     
     // Output the final result
-    // console.log(result);
+    console.log(result);
     // select div to display results
     const resultDiv = document.getElementById('result');
     
@@ -128,7 +128,6 @@ function getResults() {
         for (let key in result) {
             if (result.hasOwnProperty(key)) {
                 value = result[key];
-                console.log(key, value);
                 // create h2 element and add the employee name
                 let h2 = document.createElement('h2');
                 h2.textContent = key+':';
@@ -137,7 +136,6 @@ function getResults() {
                 for (let key in value) {
                     if (value.hasOwnProperty(key)) {
                         val = value[key];
-                        // console.log(key, val);
                         // create p and b elements and add the keys and values
                         let p = document.createElement('p');
                         let b = document.createElement('b');
