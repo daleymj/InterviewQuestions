@@ -121,11 +121,28 @@ employeeData.forEach(employee => {
 // console.log(result);
 function iterateObject() {
 
-    for (let key in result) {
-        if (result.hasOwnProperty(key)) {
-            value = result[key];
-            console.log(key, value);
-        }
-    }
+                for (let key in result) {
+                    if (result.hasOwnProperty(key)) {
+                        value = result[key];
+                        console.log(key, value);
+                        let h2 = document.createElement('h2');
+                        h2.textContent = key+':';
+                        resultDiv.append(h2);
+
+                        for (let key in value) {
+                            if (value.hasOwnProperty(key)) {
+                                val = value[key];
+                                // console.log(key, val);
+                                let p = document.createElement('p');
+                                let span = document.createElement('span');
+                                let b = document.createElement('b');
+                                p.textContent = key + ': ';
+                                b.textContent = val;
+                                p.append(b);
+                                resultDiv.append(p);
+                            }
+                        }
+                    }
+                }
 }
 iterateObject();
