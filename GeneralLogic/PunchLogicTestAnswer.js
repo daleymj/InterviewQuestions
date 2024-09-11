@@ -119,6 +119,8 @@ employeeData.forEach(employee => {
 
 // Output the final result
 // console.log(result);
+//select div to display results
+const resultDiv = document.getElementById('result');
 
 // iterate over each employee and display them in the HTML
 function iterateObject() {
