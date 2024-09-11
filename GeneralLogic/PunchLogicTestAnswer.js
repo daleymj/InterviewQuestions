@@ -138,9 +138,8 @@ function getResults() {
                     if (value.hasOwnProperty(key)) {
                         val = value[key];
                         // console.log(key, val);
-                        //create p, span and b elements and add the keys and values
+                        //create p and b elements and add the keys and values
                         let p = document.createElement('p');
-                        let span = document.createElement('span');
                         let b = document.createElement('b');
                         p.textContent = key + ': ';
                         b.textContent = val;
