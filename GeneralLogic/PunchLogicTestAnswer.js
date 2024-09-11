@@ -118,4 +118,14 @@ employeeData.forEach(employee => {
 });
 
 // Output the final result
-console.log(result);
+// console.log(result);
+function iterateObject() {
+
+    for (let key in result) {
+        if (result.hasOwnProperty(key)) {
+            value = result[key];
+            console.log(key, value);
+        }
+    }
+}
+iterateObject();
