@@ -1,6 +1,3 @@
-<div id="result"></div>
-
-<script>
 const jobMeta = {
     "Hospital - Painter": { rate: 31.25, benefitsRate: 1 },
     "Hospital - Laborer": { rate: 20.0, benefitsRate: 0.5 },
@@ -122,16 +119,3 @@ employeeData.forEach(employee => {
 
 // Output the final result
 console.log(result);
-
-function iterateObject() {
-
-    for (let key in result) {
-        if (result.hasOwnProperty(key)) {
-            value = result[key];
-            console.log(key, value);
-            document.getElementById('result').innerHTML += key +' '+ JSON.stringify(value)+'<br>';
-        }
-    }
-}
-iterateObject();
-</script>
