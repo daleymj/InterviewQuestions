@@ -120,10 +120,10 @@ function getResults() {
     
     // Output the final result
     // console.log(result);
-    //select div to display results
+    // select div to display results
     const resultDiv = document.getElementById('result');
     
-    // iterate over each employee and display them in the HTML
+    // iterate over each employee and display their results in the HTML
     function iterateObject() {
         for (let key in result) {
             if (result.hasOwnProperty(key)) {
@@ -138,7 +138,7 @@ function getResults() {
                     if (value.hasOwnProperty(key)) {
                         val = value[key];
                         // console.log(key, val);
-                        //create p and b elements and add the keys and values
+                        // create p and b elements and add the keys and values
                         let p = document.createElement('p');
                         let b = document.createElement('b');
                         p.textContent = key + ': ';
